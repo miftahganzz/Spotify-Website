@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Downloader</title>
+  <meta name="description" content="Spotify Downloader - Easily download tracks from Spotify">
+  <meta name="keywords" content="Spotify, Downloader, Music, Tracks, Download">
+  <meta name="author" content="Miftah GanzZ">
+
+  <meta property="og:title" content="Spotify Downloader">
+  <meta property="og:description" content="Easily download tracks from Spotify">
+  <meta property="og:image" content="https://cdn.miftah.biz.id/file/6635257d2d7f6.png">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+
+  <link rel="icon" href="https://cdn.miftah.biz.id/file/6635257d2d7f6.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+  <link href="https://cdn.jsdelivr.net/npm/heroicons/dist/heroicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./assets/style.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center">
+  <div class="max-w-md w-full bg-gray-800 p-8 rounded-lg shadow-lg">
+    <div class="logo mb-4">
+      <img src="https://cdn.miftah.biz.id/file/6635257d2d7f6.png" alt="Headphones Icon">
+      <h1 class="text-2xl font-semibold">Spotify Downloader</h1>
+    </div>
+    <div class="flex mb-4">
+      <input id="urlInput" type="text" class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 mr-2" placeholder="Enter Spotify URL...">
+      <button id="fetchButton" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg">
+      	<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+</svg>
+      </button>
+    </div>
+    <div id="result" class="hidden">
+      <img id="image" class="rounded-lg mb-4" src="" alt="Album Cover">
+      <p class="text-lg font-semibold mb-2" id="title"></p>
+      <p class="text-sm mb-2" id="artist"></p>
+      <p class="text-sm mb-4" id="duration"></p>
+      <audio id="preview" controls class="w-full rounded-lg mb-4"></audio>
+      <a id="downloadLink" href="" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded">Download</a>
+    </div>
+    <div id="loading" class="hidden text-gray-400 mt-4">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <div id="alert" class="hidden alert"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>

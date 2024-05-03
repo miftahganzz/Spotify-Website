@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Search</title>
+  <meta name="description" content="Spotify Search - Easily search and download tracks from Spotify">
+  <meta name="keywords" content="Spotify, Downloader, Search, Music, Tracks, Download">
+  <meta name="author" content="Miftah GanzZ">
+
+  <meta property="og:title" content="Spotify Search">
+  <meta property="og:description" content="Easily download tracks from Spotify">
+  <meta property="og:image" content="https://cdn.miftah.biz.id/file/6635257d2d7f6.png">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+
+  <link rel="icon" href="https://cdn.miftah.biz.id/file/6635257d2d7f6.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+  <link href="https://cdn.jsdelivr.net/npm/heroicons/dist/heroicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="./assets/style.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center">
+  <div class="max-w-md w-full bg-gray-800 p-8 rounded-lg shadow-lg">
+    <div class="logo mb-4">
+      <img src="https://cdn.miftah.biz.id/file/6635257d2d7f6.png" alt="Headphones Icon">
+      <h1 class="text-2xl font-semibold">Spotify Search</h1>
+    </div>
+    <div class="flex mb-4">
+      <input id="urlInput" type="text" class="w-full bg-gray-700 text-white rounded-lg px-4 py-2 mr-2" placeholder="Enter Spotify Music Title">
+      <button id="fetchButton" class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+</svg>
+      </button>
+    </div>
+    <div id="playlist" class="hidden"></div>
+    <div id="loading" class="hidden text-gray-400 mt-4">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <div id="alert" class="hidden alert"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./assets/search.js"></script>
+</body>
+</html>
