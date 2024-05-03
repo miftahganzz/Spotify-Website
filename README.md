@@ -1,7 +1,7 @@
 # Spotify Search & Download Website
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/miftahganzz/Film-Search-Website/main/filmsearch.png" alt="Film Search Screen Shot">
+  <img src="https://raw.githubusercontent.com/miftahganzz/Spotify-Website/main/assets/IMG-20240504-WA0023.jpg" alt="Spotify Screen Shot">
 </p>
 
 <p align="center">
