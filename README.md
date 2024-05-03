@@ -12,7 +12,7 @@
 
 Easily find and download your favorite music via the Spotify Search & Download website. Designed with Tailwind CSS for a responsive display, this site uses the REST API to retrieve
 
-## How To Use
+## Pages
 
 For Search Music Spotify from Title Use
 
