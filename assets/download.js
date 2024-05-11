@@ -109,7 +109,7 @@ function showTrackDetail(title, artist, duration, thumbnail, url) {
 function downloadTrack(url, title) {
 	showAlert("info", "Downloading Music");
 	const downloadLink = document.createElement("a");
-	downloadLink.href = url;
+	downloadLink.href = download;
 	downloadLink.setAttribute("download", title);
 	downloadLink.click();
 }
