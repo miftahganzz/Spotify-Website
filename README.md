@@ -22,7 +22,7 @@ Easily find and download your favorite music via the Spotify Search & Download w
 This project is licensed under the [MIT License](LICENSE).
 
 # Thanks to
-<a href="https://github.com/miftahganzz"><img src="https://github.com/miftahganzz.png?size=100" width="100" height="100"></a> | [![Caliphdev](https://github.com/caliphdev.png?size=100)](https://github.com/caliphdev)
+<a href="https://github.com/miftahganzz"><img src="https://github.com/miftahganzz.png?size=100" width="100" height="100"></a> | [![Caliphdev](https://github.com/caliphatibrata.png?size=100)](https://github.com/caliphatibrata)
 ---|---
 [Miftah GanzZ](https://github.com/miftahganzz)  | [Caliph](https://github.com/caliphdev)
 Developer | Constributor |
